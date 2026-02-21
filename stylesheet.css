@@ -79,34 +79,64 @@ td,
 th,
 tr,
 p,
-a {
+a,
+li {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
+  color: #111;
 }
 
 h2 {
-  margin: 0;
-  font-weight: normal;
+  margin: 30px 0 15px 0;
+  font-weight: 700;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
+  color: #1772d0;
 }
 
 .name {
   padding-top: 20px;
-  margin: 0;
+  margin: 0 0 15px 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+university {
+  font-weight: 700;
+  font-size: 16px;
+  color: #222;
+}
+
+honor {
+  font-weight: 700;
+  color: #222;
 }
 
 .one {
