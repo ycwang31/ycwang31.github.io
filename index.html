@@ -7,7 +7,11 @@
 
     <meta name="author" content="Yongcong Wang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal homepage of Yongcong Wang, undergraduate student at Nanjing Forestry University.">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
   </head>
@@ -30,10 +34,10 @@
                 <!--<p>
                   At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
                 </p>-->
-                <p style="text-align:center">
-                  <a href="mailto:ycwang1031@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/Resume.pdf">Resume</a> &nbsp;/&nbsp;
-                  <a href="images/wechat.jpg">WeChat</a> &nbsp;/&nbsp;
+                <p class="social-links">
+                  <a href="mailto:ycwang1031@gmail.com">Email</a>
+                  <a href="data/Resume.pdf">Resume</a>
+                  <a href="images/wechat.jpg">WeChat</a>
                   <a href="https://github.com/ycwang31">Github</a>
                 </p>
               </td>
@@ -64,7 +68,7 @@
             <tbody>
               <tr>
                 <td style="padding:0px 10px;width:100%;vertical-align:middle">
-                  <ul>
+                  <ul class="news-list">
                     <li style="line-height:125%">
                       <strong>06/2026:</strong> &#129395; Will graduate from NJFU with an honors degree!
                     </li>
@@ -171,7 +175,7 @@
           </table>
           <table style="padding:0%;width:96%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr>
+              <tr class="pub-row">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <img src="images/HDAMNet.jpg" alt="HDAMNet" style="width:100%;max-width:100%;border-radius:10px;">
                 </td>
@@ -184,12 +188,14 @@
                   <br>
                   <em>Remote Sensing</em>, 2025 (SCI Q1)
                   <br>
-                  <a href="https://doi.org/10.3390/rs17172992">Paper</a> /
-                  <a href="https://github.com/ycwang31/HDAMNet">Code</a>
+                  <span class="paper-links">
+                    <a href="https://doi.org/10.3390/rs17172992">Paper</a>
+                    <a href="https://github.com/ycwang31/HDAMNet">Code</a>
+                  </span>
                   <p>A novel deep neural network framework with long-range modeling capabilities for cloud detection in high-resolution remote sensing images.</p>
                 </td>
               </tr>
-              <tr>
+              <tr class="pub-row">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <img src="images/RESAM.jpg" alt="RESAM" style="width:100%;max-width:100%;border-radius:10px;">
                 </td>
@@ -202,8 +208,10 @@
                   <br>
                   <em>IEEE Geoscience and Remote Sensing Letters (GRSL)</em>, 2025 (CCF-C, SCI Q1)
                   <br>
-                  <a href="https://doi.org/10.3390/rs17172992">Paper</a> /
-                  <a href="https://github.com/ycwang31/HDAMNet">Code</a>
+                  <span class="paper-links">
+                    <a href="https://doi.org/10.3390/rs17172992">Paper</a>
+                    <a href="https://github.com/ycwang31/HDAMNet">Code</a>
+                  </span>
                   <p>An efficient adaptation of the Segment Anything Model (SAM) for optical remote sensing imagery using frequency-spatial techniques.</p>
                 </td>
               </tr>
@@ -265,7 +273,7 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr>
+              <tr class="exp-row">
                 <td style="padding:10px 50px;width:25%;vertical-align:middle" align="center">
                   <img src="images/csu_logo.png" style="border-style: none" height="100">
                 </td>
@@ -282,7 +290,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="exp-row">
                 <td style="padding:10px 50px;width:25%;vertical-align:middle" align="center">
                   <img src="images/sensetime_logo.png" style="border-style: none" height="100">
                 </td>
@@ -299,7 +307,7 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="exp-row">
                 <td style="padding:10px 50px;width:25%;vertical-align:middle" align="center">
                   <img src="images/idea_logo.png" style="border-style: none" height="100">
                 </td>
@@ -316,13 +324,12 @@
                 </td>
               </tr>
 
-              <tr>
+              <tr class="exp-row">
                 <td style="padding:10px 50px;width:25%;vertical-align:middle" align="center">
                   <img src="images/NJFU_logo.png" style="border-style: none" height="100">
                 </td>
 
                 <td width="75%" valign="middle">
-                  <!-- heading -->
                   <university>Nanjing Forestry University</university>
                   <br>
                   2022.09 ~ 2026.06
@@ -420,7 +427,7 @@
   </table>
 
 <!--website bottom -->	  
-  <p style="text-align:right; font-size: 12px; color: #888;">
+  <p class="site-footer">
     Template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>
     <br>
     Last updated on Feb 21, 2026
