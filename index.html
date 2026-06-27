@@ -13,7 +13,33 @@
   <link rel="icon" href="images/favicon/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
-  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    :root{--text:#111315;--muted:#5f635e;--line:#dddfda;--surface:#fff;--accent:#245f56;--width:1120px}
+    *{box-sizing:border-box}
+    body{margin:0;background:#fff;color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.65}
+    a{color:var(--accent);overflow-wrap:anywhere}
+    .skip-link{position:fixed;left:16px;top:-80px;z-index:100;padding:10px 14px;border-radius:6px;background:var(--text);color:#fff;font-weight:700}
+    .skip-link:focus{top:12px}
+    .site-header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(255,255,255,.92);backdrop-filter:blur(16px)}
+    .nav-shell,.page-shell,.site-footer{width:min(calc(100% - 48px),var(--width));margin-inline:auto}
+    .nav-shell{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .site-name{color:var(--text);font-weight:700;text-decoration:none;white-space:nowrap}
+    .site-name span{margin-left:.28rem;color:var(--muted);font-weight:600}
+    .nav-links{display:flex;align-items:center;gap:24px}
+    .nav-links a{color:var(--muted);font-size:.88rem;font-weight:600;text-decoration:none;white-space:nowrap}
+    .hero{display:grid;grid-template-columns:minmax(0,1fr) 230px;align-items:center;gap:64px;padding:76px 0 60px;border-bottom:1px solid var(--line)}
+    .hero-copy,.hero>*{min-width:0}
+    h1{max-width:760px;margin:0 0 20px;color:var(--text);font-family:Georgia,"Times New Roman",serif;font-size:3.75rem;font-weight:700;letter-spacing:0;line-height:.98}
+    h1 span{display:block;margin-top:.24em;color:var(--muted);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:1.3rem;font-weight:600}
+    .hero-lead{max-width:760px;margin:0 0 22px;color:#3f443f;font-size:1.05rem;line-height:1.72}
+    .availability{max-width:780px;margin:0 0 22px;padding:13px 15px;border:1px solid #d8e7df;border-left:4px solid #267044;border-radius:8px;background:#f5faf7;color:#305d42;font-size:.92rem;font-weight:600;overflow-wrap:anywhere}
+    .primary-links{display:flex;flex-wrap:wrap;gap:12px}
+    .primary-links a,.primary-links button{display:inline-flex;min-height:42px;align-items:center;justify-content:center;padding:10px 15px;border:1px solid #cfd5cf;border-radius:8px;background:linear-gradient(180deg,#fff 0%,#f7f8f6 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 8px 20px rgba(17,24,39,.055);color:#151817;font:inherit;font-size:.82rem;font-weight:650;line-height:1;text-decoration:none}
+    .portrait{display:block;width:100%;height:auto;aspect-ratio:1;border:1px solid var(--line);border-radius:8px;object-fit:cover;object-position:center 34%;box-shadow:0 18px 44px rgba(17,24,39,.07)}
+    @media(max-width:720px){.nav-shell{width:100%;min-height:auto;padding:13px 18px 10px;flex-direction:column;align-items:flex-start;gap:9px}.nav-links{width:100%;gap:18px;overflow-x:auto}.page-shell,.site-footer{width:min(calc(100% - 28px),var(--width))}.hero{grid-template-columns:minmax(0,1fr) 124px;align-items:start;column-gap:18px;row-gap:20px;padding:42px 0 36px}.hero-copy{display:contents}.hero-copy h1{grid-column:1}.hero-lead,.availability,.primary-links{grid-column:1/-1}.portrait-wrap{grid-column:2;grid-row:1;width:100%;justify-self:end}h1{font-size:2.2rem}.primary-links{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}.primary-links a,.primary-links button{width:100%;padding-left:10px;padding-right:10px;text-align:center}.primary-links a:nth-child(-n+3),.primary-links button:nth-child(-n+3){grid-column:span 2}.primary-links a:nth-child(n+4),.primary-links button:nth-child(n+4){grid-column:span 3}}
+    @media(max-width:420px){.page-shell,.site-footer{width:min(calc(100% - 22px),var(--width))}.hero{grid-template-columns:minmax(0,1fr) 92px;column-gap:14px}h1{font-size:1.95rem}}
+  </style>
+  <link rel="stylesheet" href="./stylesheet.css?v=20260627-1">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Yongcong Wang (王勇聪) | Researcher">
   <meta property="og:description" content="Computer Vision, AIGC, and MLLM researcher. Open to internships and research collaboration.">
