@@ -240,6 +240,7 @@ button:focus-visible {
 
 .academic-service-list {
     list-style-type: disc;
+    font-style: italic;
 }
 
 .publication-scholar-link {
