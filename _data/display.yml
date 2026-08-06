@@ -1,0 +1,8 @@
+homepage:
+  show_details: true
+  show_experience: true
+  show_news: true
+  show_selected_publications: true
+  num_news: 10
+
+footer_text: "© 2026 Yongcong Wang"

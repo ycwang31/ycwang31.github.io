@@ -1,0 +1,106 @@
+primary_name: "Yongcong Wang"
+secondary_name: "王勇聪"
+navbar_name: "Yongcong Wang"
+
+positions:
+  - name: "Master's Student at Central South University"
+
+email: "ycwang1031@gmail.com"
+cv_link: /Yongcong-Wang-Resume.pdf
+gscholar: t7rdVLoAAAAJ
+github: ycwang31
+wechat_qrcode: /images/wechat-qr.jpeg
+wechat_prompt: >-
+  Please include your name and affiliation when adding me. I am also happy to
+  meet new friends and workout partners.
+linkedin: "%E5%8B%87%E8%81%AA-%E7%8E%8B-b9b3602ba"
+openreview: "https://openreview.net/profile?id=%7EYongcong_Wang1"
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am an AI-focused master's student at
+    <a href="https://www.csu.edu.cn/" target="_blank" rel="noopener">Central South University</a>,
+    advised by Prof. Chengchao Shen.
+  </p>
+  <p>
+    My research focuses on efficient visual systems, visual generation, and
+    multimodal foundation models. I am particularly interested in high-resolution
+    and low-level vision, Flow Matching, controllable content generation, and
+    efficient vision-language adaptation.
+  </p>
+  <p class="availability-note">
+    <i class="fas fa-circle" aria-hidden="true"></i>
+    <strong>Open to internships and research collaboration.</strong>
+    Feel free to contact me by email or WeChat.
+  </p>
+
+portrait_url: /images/profile.jpg
+portrait_caption: "Portrait of Yongcong Wang"
+
+education:
+  - name: "Central South University"
+    logo: /images/logo/csu_logo.png
+    position: "M.Eng. in Computer Technology"
+    dept: "Visual and multimodal foundation models, visual generation, and Flow Matching"
+    advisor: "Advisor: Prof. Chengchao Shen"
+    date: "Sep. 2026 – Jun. 2029"
+  - name: "Nanjing Forestry University"
+    logo: /images/logo/njfu_logo.jpg
+    position: "B.Eng. in Artificial Intelligence"
+    dept: "Computer vision, semantic segmentation, object detection, and low-level vision"
+    advisor: "Advisor: Prof. Li Zhang"
+    date: "Sep. 2022 – Jun. 2026"
+
+experience:
+  - name: "SenseTime Research"
+    logo: /images/logo/sensetime_logo.png
+    position: "Algorithm Research Intern"
+    dept: "RDBP · Shenzhen, China"
+    date: "Dec. 2025 – Sep. 2026"
+  - name: "IDEA Research"
+    logo: /images/logo/idea_logo.png
+    position: "Algorithm Intern"
+    dept: "CVR Group · Shenzhen, China"
+    date: "Jun. 2025 – Sep. 2025"
+
+awards:
+  - name: "National Second Prize, Chengyuan Cup Model Design Competition"
+    date: "2024"
+  - name: "First Prize, Lanqiao Cup C/C++, Jiangsu Province"
+    date: "2024"
+  - name: "Second Prize, China International College Students' Innovation Competition, Jiangsu Province"
+    date: "2024"
+  - name: "National Third Prize, Global Campus AI Algorithm Elite Competition · Team Leader"
+    date: "2023"
+  - name: "Outstanding Graduate; two-time Merit Student and scholarship recipient"
+    date: "2023–2026"
+
+research_interests:
+  - name: "Computer Vision"
+    icon: "fas fa-eye"
+    description: "Making images and videos clearer, and helping computers understand what they see."
+  - name: "AIGC"
+    icon: "fas fa-wand-magic-sparkles"
+    description: "Creating and editing images and videos with generative AI."
+  - name: "Multimodal LLMs"
+    icon: "fas fa-layer-group"
+    description: "Helping models connect and understand images, text, and other kinds of information."
+
+academic_service:
+  - label: "Conference reviewer"
+    items:
+      - "ICIC 2026"
+  - label: "Journal reviewer"
+    items:
+      - "Scientific Reports"
+      - "Frontiers in Remote Sensing"
+      - "Frontiers in Big Data"
+
+skills:
+  - label: "Programming"
+    value: "Python, C/C++, Java, LaTeX, HTML/CSS"
+  - label: "Frameworks & Tools"
+    value: "PyTorch, Linux, Shell, SSH, Docker, Git"
+  - label: "AI Development"
+    value: "Claude Code, Codex, Gemini Pro, Cursor, Git worktrees"

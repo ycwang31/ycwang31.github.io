@@ -1,1 +1,12 @@
 .DS_Store
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+.playwright-cli/
+vendor/
+output/
+Gemfile.lock
+images/logo/njfu_logo.png
+images/paper/hdamnet.png

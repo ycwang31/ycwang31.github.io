@@ -1,0 +1,19 @@
+{% assign publications = include.publications %}
+<div class="my-3 p-0 bg-white shadow-sm rounded-xl">
+    <h2 class="h6 border-bottom border-gray p-3 mb-0">
+        {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Publications{% endif %}
+        <a href="{{ '/publications/' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+        {% if site.data.profile.gscholar %}
+        <a class="publication-scholar-link ml-2" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}" aria-label="View Yongcong Wang on Google Scholar" title="Google Scholar">
+            <i class="fab fa-google-scholar" aria-hidden="true"></i>
+            <span>Google Scholar</span>
+        </a>
+        {% endif %}
+    </h2>
+    {% for item in publications limit:include.limit %}
+        {% include widgets/publication_item.html item=item first=false last=false %}
+    {% endfor %}
+    <div class="d-block h6 p-3 mt-0 mb-0 text-right">
+        <a href="{{ '/publications/' | relative_url }}">All publications <i class="fas fa-angle-double-right"></i></a>
+    </div>
+</div>

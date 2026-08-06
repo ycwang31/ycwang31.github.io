@@ -1,0 +1,25 @@
+title: "Yongcong Wang | Academic Homepage"
+description: >-
+  Academic homepage of Yongcong Wang, a computer vision researcher working on
+  efficient visual systems, visual generation, AIGC, and multimodal foundation models.
+url: "https://ycwang31.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+last_updated: "Aug 2026"
+last_updated_iso: "2026-08-05"
+
+markdown: kramdown
+
+collections:
+  - publications
+  - news
+
+exclude:
+  - .bundle
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor

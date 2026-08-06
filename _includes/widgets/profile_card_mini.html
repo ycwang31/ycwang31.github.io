@@ -1,0 +1,77 @@
+<div class="row sticky-top profile-sidebar" style="top: 80px">
+  <div class="col">
+    <div class="card border-0 shadow-sm bg-white">
+      <div class="card-body px-4 pt-4 pb-3">
+        {% if site.data.profile.portrait_url %}
+        <div class="figure d-none d-md-block">
+          <img
+            src="{{ site.data.profile.portrait_url | relative_url }}"
+            class="figure-img img-fluid profile-portrait"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="{{ site.data.profile.portrait_caption }}"
+            alt="Portrait of {{ site.data.profile.primary_name }}">
+        </div>
+        <div class="mb-3 d-md-none text-center">
+          <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle mobile-portrait" alt="Portrait of {{ site.data.profile.primary_name }}">
+        </div>
+        {% endif %}
+
+        <div class="text-center h4 mb-1 profile-name">
+          {{ site.data.profile.primary_name }}
+          {% if site.data.profile.secondary_name %}<small>{{ site.data.profile.secondary_name }}</small>{% endif %}
+        </div>
+
+        <div class="small text-center profile-positions">
+          {% for position in site.data.profile.positions %}
+          {{ position.name }}<br>
+          {% endfor %}
+        </div>
+
+        <div class="small text-center mt-1">
+          <a class="email-text" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email | replace: "@", "(at)" }}</a>
+        </div>
+
+        <div class="text-center h4 pt-2 social-links" aria-label="Profile links">
+          {% if site.data.profile.cv_link %}
+          <a class="px-1 no-break" target="_blank" rel="noopener" href="{{ site.data.profile.cv_link | relative_url }}" aria-label="Curriculum Vitae" title="Curriculum Vitae"><i class="fas fa-file-lines" aria-hidden="true"></i></a>
+          {% endif %}
+          {% if site.data.profile.gscholar %}
+          <a class="px-1 no-break" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}" aria-label="Google Scholar" title="Google Scholar"><i class="fab fa-google-scholar" aria-hidden="true"></i></a>
+          {% endif %}
+          {% if site.data.profile.github %}
+          <a class="px-1 no-break" target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          {% endif %}
+          {% if site.data.profile.wechat_qrcode %}
+          <a class="px-1 no-break" href="#modal-wechat" data-toggle="modal" data-target="#modal-wechat" aria-label="WeChat" title="WeChat"><i class="fab fa-weixin" aria-hidden="true"></i></a>
+          {% endif %}
+          {% if site.data.profile.linkedin %}
+          <a class="px-1 no-break" target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          {% endif %}
+          {% if site.data.profile.openreview %}
+          <a class="px-1 no-break" target="_blank" rel="noopener" href="{{ site.data.profile.openreview }}" aria-label="OpenReview" title="OpenReview"><i class="fas fa-note-sticky" aria-hidden="true"></i></a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if site.data.profile.wechat_qrcode %}
+<div class="modal fade" id="modal-wechat" tabindex="-1" role="dialog" aria-labelledby="wechat-title" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h2 class="modal-title h5" id="wechat-title">Connect on WeChat</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body pt-2">
+        <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid rounded" alt="{{ site.data.profile.primary_name }} WeChat QR code">
+        {% if site.data.profile.wechat_prompt %}<p class="small text-muted mt-3 mb-0">{{ site.data.profile.wechat_prompt }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="mt-3 d-md-none"></div>
