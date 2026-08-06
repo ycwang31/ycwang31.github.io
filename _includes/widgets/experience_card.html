@@ -82,10 +82,10 @@
                             <ul class="list-unstyled small mb-1">
                                 {% for item in site.data.profile.academic_service %}
                                 <li class="mb-2">
-                                    <h3 class="academic-service-label">{{ item.label }}</h3>
-                                    <ul class="list-unstyled mb-0">
+                                    <strong>{{ item.label }}</strong>
+                                    <ul class="academic-service-list mb-0 pl-3">
                                         {% for service in item.items %}
-                                        <li class="academic-service-venue">{{ service }}</li>
+                                        <li>{{ service }}</li>
                                         {% endfor %}
                                     </ul>
                                 </li>

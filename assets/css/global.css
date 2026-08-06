@@ -126,7 +126,10 @@ button:focus-visible {
 }
 
 .profile-portrait {
-    width: 100%;
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center 34%;
@@ -225,8 +228,7 @@ button:focus-visible {
     max-width: 22rem;
 }
 
-.publication-venue,
-.academic-service-venue {
+.publication-venue {
     color: #8b2525;
     font-style: italic;
     font-weight: 400;
@@ -234,6 +236,10 @@ button:focus-visible {
 
 .publication-venue .badge {
     font-style: normal;
+}
+
+.academic-service-list {
+    list-style-type: disc;
 }
 
 .publication-scholar-link {
@@ -265,16 +271,6 @@ button:focus-visible {
     text-decoration-color: rgba(0, 123, 255, 0.4);
     text-decoration-thickness: 0.12em;
     text-underline-offset: 0.13em;
-}
-
-.academic-service-label {
-    margin-bottom: 0.2rem;
-    color: #6c757d;
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 0.055em;
-    line-height: 1.4;
-    text-transform: uppercase;
 }
 
 @media (min-width: 992px) {
