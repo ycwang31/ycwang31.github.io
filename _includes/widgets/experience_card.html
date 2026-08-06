@@ -54,6 +54,8 @@
                     </div>
                     {% endif %}
 
+                    {% comment %}
+                    Temporarily hidden from the homepage. / 暂时从主页隐藏。
                     {% if site.data.profile.awards %}
                     <div class="col-12 profile-background-section">
                         <div class="mx-2 my-1">
@@ -71,6 +73,7 @@
                         </div>
                     </div>
                     {% endif %}
+                    {% endcomment %}
 
                     {% if site.data.profile.academic_service %}
                     <div class="col-12 profile-background-section">
@@ -79,10 +82,10 @@
                             <ul class="list-unstyled small mb-1">
                                 {% for item in site.data.profile.academic_service %}
                                 <li class="mb-2">
-                                    <strong>{{ item.label }}</strong>
+                                    <h3 class="academic-service-label">{{ item.label }}</h3>
                                     <ul class="list-unstyled mb-0">
                                         {% for service in item.items %}
-                                        <li>{{ service }}</li>
+                                        <li class="academic-service-venue">{{ service }}</li>
                                         {% endfor %}
                                     </ul>
                                 </li>
@@ -92,6 +95,8 @@
                     </div>
                     {% endif %}
 
+                    {% comment %}
+                    Temporarily hidden from the homepage. / 暂时从主页隐藏。
                     {% if site.data.profile.skills %}
                     <div class="col-12 profile-background-section">
                         <div class="mx-2 my-1">
@@ -104,6 +109,7 @@
                         </div>
                     </div>
                     {% endif %}
+                    {% endcomment %}
 
                 </div>
 
