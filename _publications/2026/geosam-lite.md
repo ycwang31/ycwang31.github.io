@@ -6,7 +6,7 @@ cover: /images/paper/geosamlite.png
 pub: "IEEE GRSL"
 pub_post: " · Under review"
 pub_date: "2026"
-pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-C · JCR Q1</span> <span class="badge badge-pill badge-publication badge-info">First author</span>'
+pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-C · JCR Q1</span>'
 abstract: >-
   A lightweight foundation model designed for onboard remote-sensing segmentation.
 authors:

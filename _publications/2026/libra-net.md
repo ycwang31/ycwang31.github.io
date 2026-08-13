@@ -6,7 +6,7 @@ cover: /images/paper/libranet.png
 pub: "arXiv preprint"
 pub_post: " · Submitted"
 pub_date: "2026"
-pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-A submission</span> <span class="badge badge-pill badge-publication badge-info">First author</span>'
+pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-A submission</span>'
 abstract: >-
   A real-time video dehazing framework for 4K inputs based on Lie-algebraic bilateral affine fields.
 authors:
@@ -19,6 +19,7 @@ authors:
   - Guijuan Zhang
   - Zhuoran Zheng
 links:
-  Preprint: https://doi.org/10.48550/arXiv.2605.11508
-link_notes: "Code forthcoming"
+  Paper: https://doi.org/10.48550/arXiv.2605.11508
+  Code: https://github.com/ycwang31/LiBrA-Net
+  Dataset: https://pan.baidu.com/s/1Zp8p0xtcmW2Fchs45gAyqg?pwd=4rh5
 ---

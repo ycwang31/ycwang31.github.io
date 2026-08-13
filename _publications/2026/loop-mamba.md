@@ -20,5 +20,5 @@ authors:
   - Siyuan Yao
   - Zhuoran Zheng
 links:
-  Preprint: https://arxiv.org/abs/2608.02346v1
+  Paper: https://arxiv.org/abs/2608.02346v1
 ---

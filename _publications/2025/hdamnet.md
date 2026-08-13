@@ -5,7 +5,7 @@ selected: true
 cover: /images/paper/hdamnet.webp
 pub: "Remote Sensing"
 pub_date: "2025"
-pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">JCR Q1</span> <span class="badge badge-pill badge-publication badge-info">First author</span>'
+pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">JCR Q1</span>'
 abstract: >-
   A hierarchical dilated adaptive Mamba network for accurate cloud detection in satellite imagery.
 authors:
@@ -16,5 +16,4 @@ authors:
   - Li Zhang
 links:
   Paper: https://doi.org/10.3390/rs17172992
-  Code: https://github.com/ycwang31/HDAMNet
 ---

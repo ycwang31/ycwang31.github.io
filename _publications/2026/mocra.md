@@ -5,7 +5,6 @@ selected: true
 cover: /images/paper/mocra.png
 pub: "arXiv preprint"
 pub_date: "2026"
-pub_last: ' <span class="badge badge-pill badge-publication badge-info">First author</span>'
 abstract: >-
   A lightweight 4K all-in-one video restoration framework using band-matched compositional conditioning and sparsely routed rank-1 atoms.
 authors:
@@ -21,5 +20,7 @@ authors:
   - Pengwen Dai
   - Zhuoran Zheng
 links:
-  Preprint: https://arxiv.org/abs/2608.01829v1
+  Paper: https://arxiv.org/abs/2608.01829v1
+  Code: https://github.com/ycwang31/MoCRA
+  Dataset: https://pan.baidu.com/s/19aVflpAvC817qipCfw5bpQ?pwd=sffp
 ---

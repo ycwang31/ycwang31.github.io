@@ -1,9 +1,10 @@
 primary_name: "Yongcong Wang"
 secondary_name: "王勇聪"
-navbar_name: "Yongcong Wang"
+navbar_name: "Yongcong Wang（王勇聪）"
 
 positions:
-  - name: "Master's Student at Central South University"
+  - name: "Master's Student"
+  - name: "Central South University"
 
 email: "ycwang1031@gmail.com"
 cv_link: /Yongcong-Wang-Resume.pdf
@@ -21,7 +22,8 @@ short_bio: >-
   <p>
     I am an AI-focused master's student at
     <a href="https://www.csu.edu.cn/" target="_blank" rel="noopener">Central South University</a>,
-    advised by Prof. Chengchao Shen.
+    advised by Prof.
+    <a href="https://chengchaoshen.github.io/" target="_blank" rel="noopener">Chengchao Shen</a>.
   </p>
   <p>
     My research focuses on efficient visual systems, visual generation, and
@@ -29,11 +31,20 @@ short_bio: >-
     and low-level vision, Flow Matching, controllable content generation, and
     efficient vision-language adaptation.
   </p>
-  <p class="availability-note">
-    <i class="fas fa-circle" aria-hidden="true"></i>
-    <strong>Open to internships and research collaboration.</strong>
-    Feel free to contact me by email or WeChat.
-  </p>
+  <div class="availability-note">
+    <div class="availability-line">
+      <span class="availability-emoji" aria-hidden="true">🎓</span>
+      <strong>Actively seeking Ph.D. opportunities.</strong>
+    </div>
+    <div class="availability-line">
+      <span class="availability-emoji" aria-hidden="true">🤝</span>
+      <strong>Open to internship and research collaboration opportunities.</strong>
+    </div>
+    <div class="availability-line">
+      <span class="availability-emoji" aria-hidden="true">📬</span>
+      <span>Feel free to contact me anytime via email or WeChat.</span>
+    </div>
+  </div>
 
 portrait_url: /images/profile.jpg
 portrait_caption: "Portrait of Yongcong Wang"
@@ -41,7 +52,7 @@ portrait_caption: "Portrait of Yongcong Wang"
 education:
   - name: "Central South University"
     logo: /images/logo/csu_logo.png
-    position: "M.Eng. in Computer Technology"
+    position: "M.Eng. in Computer Science"
     dept: "Visual and multimodal foundation models, visual generation, and Flow Matching"
     advisor: "Advisor: Prof. Chengchao Shen"
     date: "Sep. 2026 – Jun. 2029"
