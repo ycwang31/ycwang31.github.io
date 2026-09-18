@@ -102,6 +102,7 @@ academic_service:
   - label: "Conference reviewer"
     items:
       - "Conference on Neural Information Processing Systems (NeurIPS) 2026"
+      - "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2027"
       - "International Conference on Autonomous Agents and Multiagent Systems (AAMAS) 2027"
       - "International Conference on Intelligent Computing (ICIC) 2026"
   - label: "Journal reviewer"
