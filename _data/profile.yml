@@ -107,6 +107,7 @@ academic_service:
       - "International Conference on Intelligent Computing (ICIC) 2026"
   - label: "Journal Reviewer"
     items:
+      - "IEEE Internet of Things Journal (IoTJ)"
       - "Scientific Reports"
       - "Frontiers in Remote Sensing"
       - "Frontiers in Big Data"
