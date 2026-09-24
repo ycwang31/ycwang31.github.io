@@ -1,0 +1,24 @@
+# All news items live here in one place — add or remove entries as needed.
+# Newest-first isn't required; the site sorts by `date` automatically.
+#
+# Fields:
+#   title        (required) shown text; can include simple HTML like <strong>
+#   date         (required) YYYY-MM-DD HH:MM:SS +0800
+#   display_date (required) short text shown next to the item, e.g. "May 2026"
+
+- title: "Released the LiBrA-Net preprint on real-time 4K video dehazing."
+  date: 2026-05-01 00:01:00 +0800
+  display_date: "May 2026"
+
+- title: "Joined SenseTime Research as an Algorithm Research Intern."
+  date: 2025-12-01 00:01:00 +0800
+  display_date: "Dec. 2025"
+
+- title: "Joined IDEA Research's CVR Group as an Algorithm Intern."
+  date: 2025-06-01 00:01:00 +0800
+  display_date: "Jun. 2025"
+
+- title: >-
+    Received funding from the <strong>National College Students' Innovation and Entrepreneurship Program</strong>.
+  date: 2024-06-01 00:01:00 +0800
+  display_date: "Jun. 2024"

@@ -11,10 +11,6 @@ last_updated_iso: "2026-08-05"
 
 markdown: kramdown
 
-collections:
-  - publications
-  - news
-
 exclude:
   - .bundle
   - .gitignore

@@ -1,4 +1,4 @@
-{% assign recent_news = site.news | sort: "date" | reverse | slice: 0, include.limit -%}
+{% assign recent_news = site.data.news | sort: "date" | reverse | slice: 0, include.limit -%}
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h2 class="h6 p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> News</h2>

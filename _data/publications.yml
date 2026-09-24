@@ -1,0 +1,133 @@
+# All publications live here in one place — add or remove entries as needed.
+# Order doesn't matter; the site sorts by `date` and groups by year automatically.
+#
+# Fields:
+#   id        (required) unique slug, used as a fallback cover placeholder
+#   title     (required)
+#   date      (required) YYYY-MM-DD HH:MM:SS +0800 — controls sort order
+#   selected  (optional) true to show on the homepage "Selected Publications" list
+#   cover     (optional) path to a cover image under /images/paper/
+#   pub       (optional) venue name, e.g. "IEEE GRSL" or "arXiv preprint"
+#   pub_post  (optional) text right after the venue, e.g. " · Under review"
+#   pub_date  (optional) year/date text shown after the venue
+#   pub_last  (optional) trailing HTML, e.g. a badge span
+#   abstract  (optional)
+#   authors   (required) list of author keys (see _data/authors.yml); append
+#             "*" for equal contribution or "#" for corresponding author
+#   links     (optional) map of label -> URL, e.g. Paper, Code, Dataset
+
+- id: mocra
+  title: "MoCRA: Mixture of Compositional Rank-1 Atoms for 4K All-in-One Video Restoration"
+  date: 2026-08-03 00:02:00 +0800
+  selected: true
+  cover: /images/paper/mocra.png
+  pub: "arXiv preprint"
+  pub_date: "2026"
+  abstract: >-
+    A lightweight 4K all-in-one video restoration framework using band-matched compositional conditioning and sparsely routed rank-1 atoms.
+  authors:
+    - Yongcong Wang
+    - Pu Wang
+    - Hingchin Chen
+    - Runci Bai
+    - Yucheng Xin
+    - Chen Wu
+    - Chengchao Shen
+    - Guangwei Gao
+    - Siyuan Yao
+    - Pengwen Dai
+    - Zhuoran Zheng
+  links:
+    Paper: https://arxiv.org/abs/2608.01829v1
+    Code: https://github.com/ycwang31/MoCRA
+    Dataset: https://pan.baidu.com/s/19aVflpAvC817qipCfw5bpQ?pwd=sffp
+
+- id: loop-mamba
+  title: "Loop-Mamba: A Loop Mamba with Degradation-Aware and Shared Memory for Old Photo Restoration"
+  date: 2026-08-03 00:01:00 +0800
+  selected: true
+  cover: /images/paper/loopmamba.png
+  pub: "arXiv preprint"
+  pub_date: "2026"
+  abstract: >-
+    A lightweight loop-based state-space framework for old photo restoration with degradation-aware guidance and shared structural memory.
+  authors:
+    - Runci Bai
+    - Yucheng Xin
+    - Pu Wang
+    - Yongcong Wang
+    - Chen Wu
+    - Dianjie Lu
+    - Guijuan Zhang
+    - Pengwen Dai
+    - Guangwei Gao
+    - Siyuan Yao
+    - Zhuoran Zheng
+  links:
+    Paper: https://arxiv.org/abs/2608.02346v1
+
+- id: libra-net
+  title: "LiBrA-Net: Lie-Algebraic Bilateral Affine Fields for Real-Time 4K Video Dehazing"
+  date: 2026-05-01 00:01:00 +0800
+  selected: true
+  cover: /images/paper/libranet.png
+  pub: "arXiv preprint"
+  pub_post: " · Submitted"
+  pub_date: "2026"
+  pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-A submission</span>'
+  abstract: >-
+    A real-time video dehazing framework for 4K inputs based on Lie-algebraic bilateral affine fields.
+  authors:
+    - Yongcong Wang
+    - Chengchao Shen
+    - Guangwei Gao
+    - Wei Wang
+    - Pengwen Dai
+    - Dianjie Lu
+    - Guijuan Zhang
+    - Zhuoran Zheng
+  links:
+    Paper: https://doi.org/10.48550/arXiv.2605.11508
+    Code: https://github.com/ycwang31/LiBrA-Net
+    Dataset: https://pan.baidu.com/s/1Zp8p0xtcmW2Fchs45gAyqg?pwd=4rh5
+
+- id: geosam-lite
+  title: "GeoSAM-Lite: A Lightweight Foundation Model for Onboard Remote Sensing Segmentation"
+  date: 2026-01-01 00:01:00 +0800
+  selected: true
+  cover: /images/paper/geosamlite.png
+  pub: "IEEE GRSL"
+  pub_post: " · Under review"
+  pub_date: "2026"
+  pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-C · JCR Q1</span>'
+  abstract: >-
+    A lightweight foundation model designed for onboard remote-sensing segmentation.
+  authors:
+    - Yongcong Wang
+    - Jie Zhang
+    - Rui Jiang
+    - Xubing Yang
+    - Ting Yun
+    - Li Zhang
+  links:
+    Paper: https://arxiv.org/pdf/2607.03760
+    Code: https://github.com/ycwang31/GeoSAM-Lite
+
+- id: hdamnet
+  title: "HDAMNet: Hierarchical Dilated Adaptive Mamba Network for Accurate Cloud Detection in Satellite Imagery"
+  date: 2025-01-01 00:01:00 +0800
+  selected: true
+  cover: /images/paper/hdamnet.webp
+  pub: "Remote Sensing"
+  pub_date: "2025"
+  pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">JCR Q1</span>'
+  abstract: >-
+    A hierarchical dilated adaptive Mamba network for accurate cloud detection in satellite imagery.
+  authors:
+    - Yongcong Wang
+    - Yunxin Li
+    - Xubing Yang
+    - Rui Jiang
+    - Li Zhang
+  links:
+    Paper: https://doi.org/10.3390/rs17172992
