@@ -71,8 +71,8 @@
   date: 2026-05-01 00:01:00 +0800
   selected: true
   cover: /images/paper/libranet.png
-  pub: "arXiv preprint"
-  pub_post: " · Submitted"
+  pub: "NeurIPS 2026"
+  pub_post: " · Accepted"
   pub_date: "2026"
   pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-A submission</span>'
   abstract: >-
