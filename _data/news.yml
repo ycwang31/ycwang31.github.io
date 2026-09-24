@@ -6,7 +6,7 @@
 #   date         (required) YYYY-MM-DD HH:MM:SS +0800
 #   display_date (required) short text shown next to the item, e.g. "May 2026"
 
-- title: "One paper was accepted to NeurIPS 2026!"
+- title: "One paper was accepted to NeurIPS 2026! See you all in Sydney!"
   date: 2026-05-01 00:01:00 +0800
   display_date: "Sep. 2026"
 
