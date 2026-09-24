@@ -14,7 +14,7 @@ wechat_qrcode: /images/wechat-qr.jpeg
 wechat_prompt: >-
   Please include your name and affiliation when adding me. I am also happy to
   meet new friends and workout partners.
-linkedin: "%E5%8B%87%E8%81%AA-%E7%8E%8B-b9b3602ba"
+linkedin: ""
 openreview: "https://openreview.net/profile?id=%7EYongcong_Wang1"
 
 short_bio_text_justify: false
