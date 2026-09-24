@@ -94,7 +94,7 @@ research_interests:
   - name: "AIGC"
     icon: "fas fa-wand-magic-sparkles"
     description: "Creating and editing images and videos with generative AI."
-  - name: "Multimodal LLMs"
+  - name: "Multimodal LLM"
     icon: "fas fa-layer-group"
     description: "Helping models connect and understand images, text, and other kinds of information."
 
