@@ -237,6 +237,12 @@ button:focus-visible {
     max-width: 22rem;
 }
 
+.publication-mobile-cover .publication-cover {
+    display: block;
+    aspect-ratio: auto;
+    height: auto;
+}
+
 .publication-venue {
     color: #8b2525;
     font-style: italic;
