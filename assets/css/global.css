@@ -247,6 +247,30 @@ button:focus-visible {
     font-style: normal;
 }
 
+.publication-note {
+    color: #6c757d;
+}
+
+.publication-cover-wrap {
+    position: relative;
+}
+
+.publication-badge {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    z-index: 1;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: #1f3c9b;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.4;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
 .academic-service-list {
     list-style-type: disc;
     font-style: italic;

@@ -7,10 +7,11 @@
 #   date      (required) YYYY-MM-DD HH:MM:SS +0800 — controls sort order
 #   selected  (optional) true to show on the homepage "Selected Publications" list
 #   cover     (optional) path to a cover image under /images/paper/
-#   pub       (optional) venue name, e.g. "IEEE GRSL" or "arXiv preprint"
-#   pub_post  (optional) text right after the venue, e.g. " · Under review"
-#   pub_date  (optional) year/date text shown after the venue
-#   pub_last  (optional) trailing HTML, e.g. a badge span
+#   pub       (optional) venue shown in red italics, e.g. "NeurIPS 2026" or "arXiv preprint"
+#   status    (optional) shown after the venue as "venue · status", e.g. "Under review"
+#   note      (optional) extra plain text after the venue line, e.g. "CCF-A · JCR Q1"
+#   badge     (optional) short venue label on the cover's top-left corner, e.g. "NeurIPS"
+#   year      (optional) year shown next to the badge, e.g. 2026
 #   abstract  (optional)
 #   authors   (required) list of author keys (see _data/authors.yml); append
 #             "*" for equal contribution or "#" for corresponding author
@@ -22,7 +23,8 @@
   selected: true
   cover: /images/paper/mocra.png
   pub: "arXiv preprint"
-  pub_date: "2026"
+  badge: "arXiv"
+  year: 2026
   abstract: >-
     A lightweight 4K all-in-one video restoration framework using band-matched compositional conditioning and sparsely routed rank-1 atoms.
   authors:
@@ -48,7 +50,8 @@
   selected: true
   cover: /images/paper/loopmamba.png
   pub: "arXiv preprint"
-  pub_date: "2026"
+  badge: "arXiv"
+  year: 2026
   abstract: >-
     A lightweight loop-based state-space framework for old photo restoration with degradation-aware guidance and shared structural memory.
   authors:
@@ -72,9 +75,9 @@
   selected: true
   cover: /images/paper/libranet.png
   pub: "NeurIPS 2026"
-  pub_post: " · Accepted(poster)"
-  pub_date: "2026"
-  pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-A submission</span>'
+  status: "Accepted (poster)"
+  badge: "NeurIPS"
+  year: 2026
   abstract: >-
     A real-time video dehazing framework for 4K inputs based on Lie-algebraic bilateral affine fields.
   authors:
@@ -97,9 +100,9 @@
   selected: true
   cover: /images/paper/geosamlite.png
   pub: "IEEE GRSL"
-  pub_post: " · Under review"
-  pub_date: "2026"
-  pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">CCF-C · JCR Q1</span>'
+  status: "Under review"
+  badge: "IEEE GRSL"
+  year: 2026
   abstract: >-
     A lightweight foundation model designed for onboard remote-sensing segmentation.
   authors:
@@ -119,8 +122,8 @@
   selected: true
   cover: /images/paper/hdamnet.webp
   pub: "Remote Sensing"
-  pub_date: "2025"
-  pub_last: ' <span class="badge badge-pill badge-publication badge-secondary">JCR Q1</span>'
+  badge: "Remote Sensing"
+  year: 2025
   abstract: >-
     A hierarchical dilated adaptive Mamba network for accurate cloud detection in satellite imagery.
   authors:
