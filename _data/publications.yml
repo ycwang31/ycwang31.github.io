@@ -240,7 +240,7 @@
   selected: true
   cover: /images/paper/hdamnet.webp
   pub: "Remote Sensing"
-  status: "Accepted"
+  # status: "Accepted"
   badge: "RS"
   year: 2025
   abstract: >-
