@@ -160,14 +160,14 @@ button:focus-visible {
 
 .profile-name small.name-zh {
     margin-top: 0.15rem;
-    color: #000;
+    color: inherit;
     font-size: 1.2em;
     line-height: 1.15;
 }
 
 .navbar-name-zh {
     margin-left: 0.5rem;
-    color: #000;
+    color: inherit;
     font-size: 1.5em;
     line-height: 1;
     vertical-align: -0.08em;
