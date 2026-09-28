@@ -151,6 +151,27 @@ button:focus-visible {
     font-weight: 400;
 }
 
+.name-zh {
+    font-family: "Zhi Mang Xing", "STXingkai", "Xingkai SC", "KaiTi", "STKaiti", serif;
+    font-weight: 400;
+    letter-spacing: -0.06em;
+}
+
+.profile-name small.name-zh {
+    margin-top: 0.15rem;
+    color: #3f4954;
+    font-size: 1.2em;
+    line-height: 1.15;
+}
+
+.navbar-name-zh {
+    margin-left: 0.5rem;
+    color: #3f4954;
+    font-size: 1.5em;
+    line-height: 1;
+    vertical-align: -0.08em;
+}
+
 .profile-positions {
     line-height: 1.45;
 }
