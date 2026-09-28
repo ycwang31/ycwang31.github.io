@@ -21,6 +21,7 @@
 - id: rare
   title: "What Visual Generators Need from Teachers: Rethinking Representation Alignment"
   date: 2026-09-25 00:05:00 +0800
+  cover: /images/paper/rare.png
   selected: true
   pub: "arXiv preprint 2026"
   badge: "arXiv"
@@ -43,6 +44,7 @@
 - id: mixed-policy-distillation
   title: "Mixed-Policy Distillation: Bringing Teacher and Student onto Common Ground"
   date: 2026-09-25 00:04:00 +0800
+  cover: /images/paper/mpd.png
   selected: true
   pub: "arXiv preprint 2026"
   badge: "arXiv"
@@ -70,6 +72,7 @@
 - id: spatial-accuracy-audits
   title: "What Does Spatial Accuracy Certify? Matched and Crossed Candidate Audits"
   date: 2026-09-25 00:03:00 +0800
+  cover: /images/paper/spatialaudit.png
   selected: true
   pub: "arXiv preprint 2026"
   badge: "arXiv"
@@ -90,6 +93,7 @@
 - id: fluidrain
   title: "FluidRain: Divergence-Free Rain Flow as an Attention Bias for Loop-in-Loop Video Deraining"
   date: 2026-09-25 00:02:00 +0800
+  cover: /images/paper/fluidrain.png
   selected: true
   pub: "arXiv preprint 2026"
   badge: "arXiv"
@@ -112,6 +116,7 @@
 - id: loopmoevr
   title: "LoopMoEVR: Loop-Based Degradation-Aware Mixture-of-Experts for Unified UHD Video Restoration"
   date: 2026-09-25 00:01:00 +0800
+  cover: /images/paper/loopmoevr.png
   selected: true
   pub: "arXiv preprint 2026"
   badge: "arXiv"
