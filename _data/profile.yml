@@ -1,6 +1,9 @@
 primary_name: "Yongcong Wang"
 secondary_name: "王勇聪"
 navbar_name: "Yongcong Wang（王勇聪）"
+# Font for the Chinese name. Compare all options at /name-fonts/.
+# Options: "Zhi Mang Xing" | "Ma Shan Zheng" | "Long Cang" | "Liu Jian Mao Cao"
+secondary_name_font: "Zhi Mang Xing"
 
 positions:
   - name: "Master's Student"

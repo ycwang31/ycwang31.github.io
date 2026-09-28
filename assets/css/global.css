@@ -152,24 +152,49 @@ button:focus-visible {
 }
 
 .name-zh {
-    font-family: "Zhi Mang Xing", "STXingkai", "Xingkai SC", "KaiTi", "STKaiti", serif;
+    font-family: var(--name-zh-font, "Zhi Mang Xing"), "STXingkai", "Xingkai SC", "KaiTi", "STKaiti", serif;
     font-weight: 400;
-    letter-spacing: -0.06em;
+    font-synthesis: none;
+    letter-spacing: -0.03em;
 }
 
 .profile-name small.name-zh {
     margin-top: 0.15rem;
-    color: #3f4954;
+    color: #000;
     font-size: 1.2em;
     line-height: 1.15;
 }
 
 .navbar-name-zh {
     margin-left: 0.5rem;
-    color: #3f4954;
+    color: #000;
     font-size: 1.5em;
     line-height: 1;
     vertical-align: -0.08em;
+}
+
+.name-font-preview {
+    padding: 1.25rem 1.5rem;
+}
+
+.name-font-preview + .name-font-preview {
+    border-top: 1px solid #e9ecef;
+}
+
+.name-font-preview .name-zh {
+    color: #000;
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+
+.name-font-preview-navbar {
+    font-size: 1.25rem;
+}
+
+.name-font-preview-navbar .name-zh {
+    margin-left: 0.5rem;
+    font-size: 1.5em;
+    line-height: 1;
 }
 
 .profile-positions {
