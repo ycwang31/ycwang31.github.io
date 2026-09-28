@@ -247,6 +247,11 @@ button:focus-visible {
     font-style: normal;
 }
 
+.publication-link-empty {
+    color: #adb5bd;
+    cursor: default;
+}
+
 .publication-note {
     color: #6c757d;
 }
