@@ -155,8 +155,51 @@ button:focus-visible {
     line-height: 1.45;
 }
 
-.social-links a {
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 14px;
+    row-gap: 6px;
+    margin: 0 -10px;
+    padding-top: 0.75rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #495057;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.social-link i {
+    width: 1.05em;
+    color: #1f6feb;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: #1f6feb;
     text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+    .social-links {
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 20px;
+        row-gap: 8px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .social-links {
+        grid-template-columns: repeat(2, max-content);
+    }
 }
 
 .availability-note {

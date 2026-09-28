@@ -32,24 +32,24 @@
           <a class="email-text" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email | replace: "@", "(at)" }}</a>
         </div>
 
-        <div class="text-center h4 pt-2 social-links" aria-label="Profile links">
+        <div class="social-links" aria-label="Profile links">
           {% if site.data.profile.cv_link %}
-          <a class="px-1 no-break" target="_blank" rel="noopener" href="{{ site.data.profile.cv_link | relative_url }}" aria-label="Curriculum Vitae" title="Curriculum Vitae"><i class="fas fa-file-lines" aria-hidden="true"></i></a>
+          <a class="social-link" target="_blank" rel="noopener" href="{{ site.data.profile.cv_link | relative_url }}" title="Curriculum Vitae"><i class="fas fa-file-lines" aria-hidden="true"></i><span>CV</span></a>
           {% endif %}
           {% if site.data.profile.gscholar %}
-          <a class="px-1 no-break" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}" aria-label="Google Scholar" title="Google Scholar"><i class="fab fa-google-scholar" aria-hidden="true"></i></a>
+          <a class="social-link" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}" title="Google Scholar"><i class="fab fa-google-scholar" aria-hidden="true"></i><span>Scholar</span></a>
           {% endif %}
           {% if site.data.profile.github %}
-          <a class="px-1 no-break" target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}" aria-label="GitHub" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a class="social-link" target="_blank" rel="noopener" href="https://github.com/{{ site.data.profile.github }}" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
           {% endif %}
           {% if site.data.profile.wechat_qrcode %}
-          <a class="px-1 no-break" href="#modal-wechat" data-toggle="modal" data-target="#modal-wechat" aria-label="WeChat" title="WeChat"><i class="fab fa-weixin" aria-hidden="true"></i></a>
+          <a class="social-link" href="#modal-wechat" data-toggle="modal" data-target="#modal-wechat" title="WeChat"><i class="fab fa-weixin" aria-hidden="true"></i><span>WeChat</span></a>
           {% endif %}
           {% if site.data.profile.linkedin %}
-          <a class="px-1 no-break" target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a class="social-link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
           {% endif %}
           {% if site.data.profile.openreview %}
-          <a class="px-1 no-break" target="_blank" rel="noopener" href="{{ site.data.profile.openreview }}" aria-label="OpenReview" title="OpenReview"><i class="fas fa-note-sticky" aria-hidden="true"></i></a>
+          <a class="social-link" target="_blank" rel="noopener" href="{{ site.data.profile.openreview }}" title="OpenReview"><i class="fas fa-note-sticky" aria-hidden="true"></i><span>OpenReview</span></a>
           {% endif %}
         </div>
       </div>
