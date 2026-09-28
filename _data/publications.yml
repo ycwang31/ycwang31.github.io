@@ -240,7 +240,7 @@
   selected: true
   cover: /images/paper/hdamnet.webp
   pub: "Remote Sensing"
-  badge: "Remote Sensing"
+  badge: "RS"
   year: 2025
   abstract: >-
     A hierarchical dilated adaptive Mamba network for accurate cloud detection in satellite imagery.
