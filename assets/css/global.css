@@ -159,10 +159,10 @@ button:focus-visible {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    column-gap: 14px;
-    row-gap: 6px;
-    margin: 0 -10px;
-    padding-top: 0.75rem;
+    column-gap: 18px;
+    row-gap: 8px;
+    margin: 0 -16px;
+    padding-top: 0.85rem;
 }
 
 .social-link {
@@ -196,7 +196,7 @@ button:focus-visible {
     }
 }
 
-@media (max-width: 359.98px) {
+@media (max-width: 399.98px) {
     .social-links {
         grid-template-columns: repeat(2, max-content);
     }
