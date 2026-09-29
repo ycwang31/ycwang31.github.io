@@ -39,7 +39,7 @@
     - Yiming Lu
     - Chengchao Shen
   links:
-    Paper:
+    Paper: http://arxiv.org/abs/2609.34732
 
 - id: mixed-policy-distillation
   title: "Mixed-Policy Distillation: Bringing Teacher and Student onto Common Ground"
