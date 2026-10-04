@@ -318,24 +318,24 @@ button:focus-visible {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 6px;
-    margin-top: 0.5rem;
+    gap: 5px;
+    margin-top: 0.45rem;
 }
 
 .pub-btn {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     margin: 0;
-    padding: 2px 10px;
+    padding: 1px 8px;
     border: 1px solid #d9dee4;
-    border-radius: 6px;
+    border-radius: 5px;
     background: #fff;
     color: #3d4650;
     font-family: inherit;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.55;
     white-space: nowrap;
     cursor: pointer;
     box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
@@ -344,11 +344,7 @@ button:focus-visible {
 
 .pub-btn i {
     color: #1f6feb;
-    font-size: 0.85rem;
-}
-
-.pub-btn .ai-arxiv {
-    color: #b31b1b;
+    font-size: 0.78rem;
 }
 
 .pub-btn .fa-github {

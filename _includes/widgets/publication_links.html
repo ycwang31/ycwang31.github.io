@@ -8,7 +8,7 @@
     {%- assign key = label | downcase -%}
     {%- assign url_lc = url | append: "" | downcase -%}
     {%- case key -%}
-    {%- when "paper" -%}{%- if url_lc contains "arxiv" -%}{%- assign icon = "ai ai-arxiv" -%}{%- else -%}{%- assign icon = "fas fa-file-lines" -%}{%- endif -%}
+    {%- when "paper" -%}{%- assign icon = "fas fa-file-lines" -%}
     {%- when "code" -%}{%- if url_lc contains "github" -%}{%- assign icon = "fab fa-github" -%}{%- else -%}{%- assign icon = "fas fa-code" -%}{%- endif -%}
     {%- when "dataset" -%}{%- assign icon = "fas fa-database" -%}
     {%- when "project", "project page", "website" -%}{%- assign icon = "fas fa-globe" -%}
