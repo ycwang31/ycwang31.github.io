@@ -229,7 +229,7 @@
   date: 2026-05-01 00:01:00 +0800
   selected: true
   cover: /images/paper/libranet.png
-  pub: "NeurIPS 2026"
+  pub: "The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026)"
   status: "Accepted (poster)"
   rank: [CCF-A]
   badge: "NeurIPS 2026"
@@ -262,9 +262,9 @@
   date: 2026-01-01 00:01:00 +0800
   selected: true
   cover: /images/paper/geosamlite.png
-  pub: "IEEE GRSL"
+  pub: "IEEE Geoscience and Remote Sensing Letters (GRSL)"
   status: "Under review"
-  rank: [CCF-C]
+  rank: [JCR Q1]
   badge: "IEEE GRSL 2026"
   year: 2026
   abstract: >-
