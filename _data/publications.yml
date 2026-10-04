@@ -1,17 +1,18 @@
 # All publications live here in one place — add or remove entries as needed.
-# Order doesn't matter; the site sorts by `date` and groups by year automatically.
+# Order doesn't matter; the site groups by `year` and sorts by `date` automatically.
 #
 # Fields:
 #   id        (required) unique slug, used as a fallback cover placeholder
 #   title     (required)
-#   date      (required) YYYY-MM-DD HH:MM:SS +0800 — controls sort order
+#   date      (required) YYYY-MM-DD HH:MM:SS +0800 — controls order within a year
+#   year      (required) groups the paper under this year on the Publications page
 #   selected  (optional) true to show on the homepage "Selected Publications" list
 #   cover     (optional) path to a cover image under /images/paper/
 #   pub       (optional) venue shown in red italics, e.g. "NeurIPS 2026" or "arXiv preprint"
 #   status    (optional) shown after the venue as "venue · status", e.g. "Under review"
-#   note      (optional) extra plain text after the venue line, e.g. "CCF-A · JCR Q1"
-#   badge     (optional) short venue label on the cover's top-left corner, e.g. "NeurIPS"
-#   year      (optional) year shown next to the badge, e.g. 2026
+#   rank      (optional) venue ratings shown as tags after the venue line,
+#             e.g. [CCF-A] or [CCF-B, JCR Q1]; leave as [] to show nothing
+#   badge     (optional) full label on the cover's top-left corner, e.g. "NeurIPS 2026"
 #   abstract  (optional)
 #   authors   (required) list of author keys (see _data/authors.yml); append
 #             "*" for equal contribution or "#" for corresponding author
@@ -25,7 +26,8 @@
   cover: /images/paper/rare.png
   selected: true
   pub: "arXiv preprint 2026"
-  badge: "arXiv"
+  rank: []
+  badge: "arXiv 2026"
   year: 2026
   abstract: >-
     Representation alignment works best on the teacher features the diffusion model cannot learn on its own. RARE uses this to choose the teacher layer and decide when to stop aligning.
@@ -55,7 +57,8 @@
   cover: /images/paper/mpd.png
   selected: true
   pub: "arXiv preprint 2026"
-  badge: "arXiv"
+  rank: []
+  badge: "arXiv 2026"
   year: 2026
   abstract: >-
     A distillation method for LLM post-training where the student starts each trajectory and the teacher takes over when the student becomes uncertain.
@@ -83,7 +86,8 @@
   cover: /images/paper/spatialaudit.png
   selected: true
   pub: "arXiv preprint 2026"
-  badge: "arXiv"
+  rank: []
+  badge: "arXiv 2026"
   year: 2026
   abstract: >-
     High scores on spatial multiple-choice benchmarks can come from answer-choice shortcuts. We test this with controlled layout changes and find that model answers often flip.
@@ -104,7 +108,8 @@
   cover: /images/paper/fluidrain.png
   selected: true
   pub: "arXiv preprint 2026"
-  badge: "arXiv"
+  rank: []
+  badge: "arXiv 2026"
   year: 2026
   abstract: >-
     A 0.80M-parameter video deraining model that treats rain as a divergence-free flow and uses it to steer attention across frames and scales.
@@ -134,7 +139,8 @@
   cover: /images/paper/loopmoevr.png
   selected: true
   pub: "arXiv preprint 2026"
-  badge: "arXiv"
+  rank: []
+  badge: "arXiv 2026"
   year: 2026
   abstract: >-
     A looped mixture-of-experts model with about 0.88M parameters that handles dehazing, deraining, denoising and low-light enhancement for UHD video.
@@ -156,7 +162,8 @@
   selected: true
   cover: /images/paper/mocra.png
   pub: "arXiv preprint 2026"
-  badge: "arXiv"
+  rank: []
+  badge: "arXiv 2026"
   year: 2026
   abstract: >-
     A lightweight 4K all-in-one video restoration framework using band-matched compositional conditioning and sparsely routed rank-1 atoms.
@@ -190,7 +197,8 @@
   selected: true
   cover: /images/paper/loopmamba.png
   pub: "arXiv preprint 2026"
-  badge: "arXiv"
+  rank: []
+  badge: "arXiv 2026"
   year: 2026
   abstract: >-
     A lightweight loop-based state-space framework for old photo restoration with degradation-aware guidance and shared structural memory.
@@ -223,7 +231,8 @@
   cover: /images/paper/libranet.png
   pub: "NeurIPS 2026"
   status: "Accepted (poster)"
-  badge: "NeurIPS"
+  rank: [CCF-A]
+  badge: "NeurIPS 2026"
   year: 2026
   abstract: >-
     A real-time video dehazing framework for 4K inputs based on Lie-algebraic bilateral affine fields.
@@ -255,7 +264,8 @@
   cover: /images/paper/geosamlite.png
   pub: "IEEE GRSL"
   status: "Under review"
-  badge: "IEEE GRSL"
+  rank: []
+  badge: "IEEE GRSL 2026"
   year: 2026
   abstract: >-
     A lightweight foundation model designed for onboard remote-sensing segmentation.
@@ -284,7 +294,8 @@
   cover: /images/paper/hdamnet.webp
   pub: "Remote Sensing"
   status: "Accepted"
-  badge: "RS"
+  rank: [JCR Q1]
+  badge: "RS 2025"
   year: 2025
   abstract: >-
     A hierarchical dilated adaptive Mamba network for accurate cloud detection in satellite imagery.

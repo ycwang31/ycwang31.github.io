@@ -432,8 +432,25 @@ button:focus-visible {
     }
 }
 
-.publication-note {
-    color: #6c757d;
+.publication-rank {
+    display: inline-block;
+    margin-left: 0.3rem;
+    padding: 0 6px;
+    border: 1px solid #ecc9c9;
+    border-radius: 4px;
+    background: #fbf1f1;
+    color: #8b2525;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    vertical-align: 0.05em;
+    white-space: nowrap;
+}
+
+.publication-rank + .publication-rank {
+    margin-left: 0.2rem;
 }
 
 .publication-cover-wrap {
