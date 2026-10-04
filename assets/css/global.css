@@ -287,10 +287,6 @@ button:focus-visible {
     font-style: italic;
 }
 
-.abstract-links a {
-    white-space: nowrap;
-}
-
 .publication-cover {
     aspect-ratio: 3 / 2;
     object-fit: contain;
@@ -318,9 +314,126 @@ button:focus-visible {
     font-style: normal;
 }
 
-.publication-link-empty {
+.publication-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin-top: 0.5rem;
+}
+
+.pub-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 2px 10px;
+    border: 1px solid #d9dee4;
+    border-radius: 6px;
+    background: #fff;
+    color: #3d4650;
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 500;
+    line-height: 1.6;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pub-btn i {
+    color: #1f6feb;
+    font-size: 0.85rem;
+}
+
+.pub-btn .ai-arxiv {
+    color: #b31b1b;
+}
+
+.pub-btn .fa-github {
+    color: #24292f;
+}
+
+.pub-btn:hover,
+.pub-btn:focus-visible,
+.pub-btn[aria-expanded="true"] {
+    border-color: #9dbcf5;
+    background: #f5f9ff;
+    color: #1f5fcc;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(31, 111, 235, 0.12);
+}
+
+.pub-btn.is-disabled,
+.pub-btn.is-disabled:hover {
+    border-style: dashed;
+    background: #fff;
     color: #adb5bd;
     cursor: default;
+    box-shadow: none;
+}
+
+.pub-btn.is-disabled i {
+    color: #c4cad1;
+}
+
+.pub-bibtex {
+    position: relative;
+    margin-top: 0.6rem;
+    border: 1px solid #e3e7eb;
+    border-radius: 8px;
+    background: #f8f9fb;
+}
+
+.pub-bibtex pre {
+    margin: 0;
+    padding: 0.75rem 5.5rem 0.75rem 0.9rem;
+    color: #2b3137;
+    font-family: "Source Code Pro", SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.pub-bibtex-copy {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1px 8px;
+    border: 1px solid #d9dee4;
+    border-radius: 5px;
+    background: #fff;
+    color: #3d4650;
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.pub-bibtex-copy:hover,
+.pub-bibtex-copy:focus-visible {
+    border-color: #9dbcf5;
+    background: #f5f9ff;
+    color: #1f5fcc;
+}
+
+.pub-bibtex-copy.is-copied {
+    border-color: #9fd3b0;
+    background: #f1faf4;
+    color: #1e7a3c;
+}
+
+@media (max-width: 575.98px) {
+    .pub-bibtex pre {
+        padding: 2.1rem 0.8rem 0.75rem;
+    }
 }
 
 .publication-note {

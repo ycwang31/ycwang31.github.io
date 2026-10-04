@@ -15,6 +15,7 @@
 #   abstract  (optional)
 #   authors   (required) list of author keys (see _data/authors.yml); append
 #             "*" for equal contribution or "#" for corresponding author
+#   bibtex    (optional) BibTeX entry; adds a BibTeX button with a copy action
 #   links     (optional) map of label -> URL, e.g. Paper, Code, Dataset;
 #             leave the URL empty (e.g. "Paper:") to show an unlinked button
 
@@ -38,6 +39,13 @@
     - Zijia Wang
     - Yiming Lu
     - Chengchao Shen
+  bibtex: |
+    @article{wang2026visual,
+      title={What Visual Generators Need from Teachers: Rethinking Representation Alignment},
+      author={Wang, Yongcong and Chen, Hingchin and Fan, Mingyu and Jiang, Shuo and Zhang, Teer and Sun, Yucong and Wang, Zijia and Lu, Yiming and Shen, Chengchao},
+      journal={arXiv preprint arXiv:2609.34732},
+      year={2026}
+    }
   links:
     Paper: http://arxiv.org/abs/2609.34732
 
@@ -110,6 +118,13 @@
     - Siyuan Yao
     - Shujun Fu
     - Zhuoran Zheng
+  bibtex: |
+    @article{wang2026fluidrain,
+      title={FluidRain: Incompressible Rain Flow as an Attention Bias for Loop-in-Loop Video Deraining},
+      author={Wang, Pu and Wang, Yongcong and Li, Wenhao and Chen, Xiang and Gao, Guangwei and Pan, Jinshan and Yao, Siyuan and Fu, Shujun and Zheng, Zhuoran},
+      journal={arXiv preprint arXiv:2609.29006},
+      year={2026}
+    }
   links:
     Paper: https://arxiv.org/abs/2609.29006
 
@@ -157,6 +172,13 @@
     - Siyuan Yao
     - Pengwen Dai
     - Zhuoran Zheng
+  bibtex: |
+    @article{wang2026mocra,
+      title={MoCRA: Mixture of Compositional Rank-1 Atoms for 4K All-in-One Video Restoration},
+      author={Wang, Yongcong and Wang, Pu and Chen, Hingchin and Bai, Runci and Xin, Yucheng and Wu, Chen and Shen, Chengchao and Gao, Guangwei and Yao, Siyuan and Dai, Pengwen and others},
+      journal={arXiv preprint arXiv:2608.01829},
+      year={2026}
+    }
   links:
     Paper: https://arxiv.org/abs/2608.01829v1
     Code: https://github.com/ycwang31/MoCRA
@@ -184,6 +206,13 @@
     - Guangwei Gao
     - Siyuan Yao
     - Zhuoran Zheng
+  bibtex: |
+    @article{bai2026loop,
+      title={Loop-Mamba: A Loop Mamba with Degradation-Aware and Shared Memory for Old Photo Restoration},
+      author={Bai, Runci and Xin, Yucheng and Wang, Pu and Wang, Yongcong and Wu, Chen and Lu, Dianjie and Zhang, Guijuan and Dai, Pengwen and Gao, Guangwei and Yao, Siyuan and others},
+      journal={arXiv preprint arXiv:2608.02346},
+      year={2026}
+    }
   links:
     Paper: https://arxiv.org/abs/2608.02346v1
 
@@ -207,6 +236,13 @@
     - Dianjie Lu
     - Guijuan Zhang
     - Zhuoran Zheng
+  bibtex: |
+    @article{wang2026libra,
+      title={LiBrA-Net: Lie-Algebraic Bilateral Affine Fields for Real-Time 4K Video Dehazing},
+      author={Wang, Yongcong and Shen, Chengchao and Gao, Guangwei and Wang, Wei and Dai, Pengwen and Lu, Dianjie and Zhang, Guijuan and Zheng, Zhuoran},
+      journal={arXiv preprint arXiv:2605.11508},
+      year={2026}
+    }
   links:
     Paper: https://doi.org/10.48550/arXiv.2605.11508
     Code: https://github.com/ycwang31/LiBrA-Net
@@ -230,6 +266,13 @@
     - Xubing Yang
     - Ting Yun
     - Li Zhang
+  bibtex: |
+    @article{wang2026geosam,
+      title={GeoSAM-Lite: A Lightweight Foundation Model for Onboard Remote Sensing Segmentation},
+      author={Wang, Yongcong and Zhang, Jie and Jiang, Rui and Yang, Xubing and Yun, Ting and Zhang, Li},
+      journal={arXiv preprint arXiv:2607.03760},
+      year={2026}
+    }
   links:
     Paper: https://arxiv.org/pdf/2607.03760
     Code: https://github.com/ycwang31/GeoSAM-Lite
@@ -251,5 +294,16 @@
     - Xubing Yang
     - Rui Jiang
     - Li Zhang
+  bibtex: |
+    @article{wang2025hdamnet,
+      title={HDAMNet: Hierarchical dilated adaptive Mamba network for accurate cloud detection in satellite imagery},
+      author={Wang, Yongcong and Li, Yunxin and Yang, Xubing and Jiang, Rui and Zhang, Li},
+      journal={Remote Sensing},
+      volume={17},
+      number={17},
+      pages={2992},
+      year={2025},
+      publisher={MDPI}
+    }
   links:
     Paper: https://doi.org/10.3390/rs17172992

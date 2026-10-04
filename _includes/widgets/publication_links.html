@@ -1,0 +1,37 @@
+{%- assign item = include.item -%}
+<div class="publication-actions">
+    {%- for link in item.links -%}
+    {%- assign label = link[0] -%}
+    {%- assign url = link[1] -%}
+    {%- assign target = "_blank" -%}
+    {%- if url.url -%}{%- assign target = url.target | default: "_blank" -%}{%- assign url = url.url -%}{%- endif -%}
+    {%- assign key = label | downcase -%}
+    {%- assign url_lc = url | append: "" | downcase -%}
+    {%- case key -%}
+    {%- when "paper" -%}{%- if url_lc contains "arxiv" -%}{%- assign icon = "ai ai-arxiv" -%}{%- else -%}{%- assign icon = "fas fa-file-lines" -%}{%- endif -%}
+    {%- when "code" -%}{%- if url_lc contains "github" -%}{%- assign icon = "fab fa-github" -%}{%- else -%}{%- assign icon = "fas fa-code" -%}{%- endif -%}
+    {%- when "dataset" -%}{%- assign icon = "fas fa-database" -%}
+    {%- when "project", "project page", "website" -%}{%- assign icon = "fas fa-globe" -%}
+    {%- when "video" -%}{%- assign icon = "fab fa-youtube" -%}
+    {%- when "slides", "poster" -%}{%- assign icon = "fas fa-person-chalkboard" -%}
+    {%- else -%}{%- assign icon = "fas fa-link" -%}
+    {%- endcase -%}
+    {%- if url == nil or url == "" %}
+    <span class="pub-btn is-disabled" aria-disabled="true"><i class="{{ icon }}" aria-hidden="true"></i><span>{{ label }}</span></span>
+    {%- else %}
+    <a class="pub-btn" target="{{ target }}" rel="noopener" href="{{ url }}"><i class="{{ icon }}" aria-hidden="true"></i><span>{{ label }}</span></a>
+    {%- endif -%}
+    {%- endfor -%}
+    {%- if item.bibtex %}
+    <button type="button" class="pub-btn" data-bibtex-toggle aria-expanded="false"><i class="fas fa-quote-right" aria-hidden="true"></i><span>BibTeX</span></button>
+    {%- endif -%}
+    {%- if item.link_notes %}
+    <span class="publication-link-note">{{ item.link_notes }}</span>
+    {%- endif %}
+</div>
+{%- if item.bibtex %}
+<div class="pub-bibtex" hidden>
+    <button type="button" class="pub-bibtex-copy" data-bibtex-copy><i class="far fa-copy" aria-hidden="true"></i><span>Copy</span></button>
+    <pre><code>{{ item.bibtex | strip | escape }}</code></pre>
+</div>
+{%- endif %}

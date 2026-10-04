@@ -39,4 +39,59 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
-})
+});
+
+(function () {
+    function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+            return navigator.clipboard.writeText(text);
+        }
+        return new Promise(function (resolve, reject) {
+            var area = document.createElement('textarea');
+            area.value = text;
+            area.setAttribute('readonly', '');
+            area.style.position = 'fixed';
+            area.style.opacity = '0';
+            document.body.appendChild(area);
+            area.select();
+            var ok = document.execCommand('copy');
+            document.body.removeChild(area);
+            ok ? resolve() : reject();
+        });
+    }
+
+    function flash(button, label, success) {
+        var icon = button.querySelector('i');
+        var text = button.querySelector('span');
+        clearTimeout(button._resetTimer);
+        button.classList.toggle('is-copied', success);
+        icon.className = success ? 'fas fa-check' : 'far fa-copy';
+        text.textContent = label;
+        button._resetTimer = setTimeout(function () {
+            button.classList.remove('is-copied');
+            icon.className = 'far fa-copy';
+            text.textContent = 'Copy';
+        }, 1800);
+    }
+
+    document.addEventListener('click', function (event) {
+        var toggle = event.target.closest('[data-bibtex-toggle]');
+        if (toggle) {
+            var panel = toggle.closest('.publication-actions').nextElementSibling;
+            if (!panel || !panel.classList.contains('pub-bibtex')) return;
+            var opening = panel.hidden;
+            panel.hidden = !opening;
+            toggle.setAttribute('aria-expanded', String(opening));
+            return;
+        }
+
+        var copy = event.target.closest('[data-bibtex-copy]');
+        if (copy) {
+            var code = copy.parentElement.querySelector('code');
+            copyText(code.textContent).then(
+                function () { flash(copy, 'Copied!', true); },
+                function () { flash(copy, 'Press Ctrl+C', false); }
+            );
+        }
+    });
+})();
