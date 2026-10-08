@@ -153,8 +153,15 @@
     - Dianjie Lu
     - Linwei Fan
     - Zhuoran Zheng
+  bibtex: |
+    @article{xin2026loopmoevr,
+      title={LoopMoEVR: Loop-Based Degradation-Aware Mixture-of-Experts for Unified UHD Video Restoration},
+      author={Xin, Yucheng and Bai, Runci and Wang, Yongcong and Gao, Guangwei and Liu, Jiao and Lu, Dianjie and Fan, Linwei and Zheng, Zhuoran},
+      journal={arXiv preprint arXiv:2610.05109},
+      year={2026}
+    }
   links:
-    Paper:
+    Paper: https://arxiv.org/abs/2610.05109
 
 - id: mocra
   title: "MoCRA: Mixture of Compositional Rank-1 Atoms for 4K All-in-One Video Restoration"
