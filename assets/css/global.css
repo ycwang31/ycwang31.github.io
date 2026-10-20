@@ -191,14 +191,14 @@ button:focus-visible {
     --brand: #475569;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 5px;
     color: #3f4954;
     font-size: 0.8rem;
     line-height: 1.5;
     white-space: nowrap;
 }
 
-.social-link--cv { --brand: #475569; }
+.social-link--cv { --brand: #5b6b7c; }
 .social-link--scholar { --brand: #4285f4; }
 .social-link--github { --brand: #24292f; }
 .social-link--wechat { --brand: #07c160; }
@@ -210,10 +210,10 @@ button:focus-visible {
     flex: none;
     align-items: center;
     justify-content: center;
-    width: 1.15em;
+    width: 1.3em;
     color: var(--brand);
-    font-size: 1.08em;
-    transition: transform 0.15s ease, opacity 0.15s ease;
+    font-size: 1.25em;
+    transition: transform 0.15s ease;
 }
 
 .social-link:hover,
