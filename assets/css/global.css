@@ -188,26 +188,49 @@ button:focus-visible {
 }
 
 .social-link {
+    --brand: #475569;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    color: #495057;
+    gap: 7px;
+    color: #3f4954;
     font-size: 0.8rem;
     line-height: 1.5;
     white-space: nowrap;
 }
 
-.social-link i {
-    width: 1.05em;
-    color: #1f6feb;
-    font-size: 1rem;
-    text-align: center;
+.social-link--cv { --brand: #475569; }
+.social-link--scholar { --brand: #4285f4; }
+.social-link--github { --brand: #24292f; }
+.social-link--wechat { --brand: #07c160; }
+.social-link--linkedin { --brand: #0a66c2; }
+.social-link--openreview { --brand: #8c1b13; }
+
+.social-icon {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    background-color: var(--brand);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(0, 0, 0, 0.08));
+    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 0.72rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .social-link:hover,
 .social-link:focus {
-    color: #1f6feb;
+    color: #1f2933;
     text-decoration: none;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(15, 23, 42, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 @media (max-width: 767.98px) {
