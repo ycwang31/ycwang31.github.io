@@ -191,7 +191,7 @@ button:focus-visible {
     --brand: #475569;
     display: inline-flex;
     align-items: center;
-    gap: 7px;
+    gap: 6px;
     color: #3f4954;
     font-size: 0.8rem;
     line-height: 1.5;
@@ -210,15 +210,10 @@ button:focus-visible {
     flex: none;
     align-items: center;
     justify-content: center;
-    width: 22px;
-    height: 22px;
-    border-radius: 6px;
-    background-color: var(--brand);
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(0, 0, 0, 0.08));
-    box-shadow: 0 1px 2px rgba(15, 23, 42, 0.18), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
-    color: #fff;
-    font-size: 0.72rem;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    width: 1.15em;
+    color: var(--brand);
+    font-size: 1.08em;
+    transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
 .social-link:hover,
@@ -230,7 +225,6 @@ button:focus-visible {
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
     transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(15, 23, 42, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
 @media (max-width: 767.98px) {
