@@ -43,9 +43,12 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.97) !important;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background-color: #fff !important;
+    /* Own compositing layer: keeps the fixed bar from flickering or
+       disappearing during momentum scrolling on mobile Safari. */
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .inline-badge {
@@ -94,6 +97,13 @@ div.lazy {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* No rubber-band bounce at the top/bottom of the page, which makes the
+   fixed navbar jump out of view on touch devices. */
+html,
+body {
+    overscroll-behavior-y: none;
 }
 
 body {
