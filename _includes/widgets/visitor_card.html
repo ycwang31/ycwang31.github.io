@@ -3,9 +3,6 @@
 <section class="card border-0 shadow-sm bg-white visitor-card" id="visitor-card" aria-label="Visitor statistics">
   <div class="card-body px-3 py-3">
     {% if vw.map_image_url and vw.map_image_url != "" %}
-    <div class="visitor-card-head">
-      <span class="visitor-card-title"><i class="fas fa-earth-asia" aria-hidden="true"></i> Visitor Map</span>
-    </div>
     <div class="visitor-map" aria-hidden="true">
       <img src="{{ vw.map_image_url }}" alt="" draggable="false">
     </div>

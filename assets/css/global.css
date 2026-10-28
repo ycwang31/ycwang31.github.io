@@ -743,18 +743,6 @@ button:focus-visible {
     position: static !important;
 }
 
-.visitor-card-head {
-    margin-bottom: 0.6rem;
-    color: #3f4954;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.visitor-card-head .fa-earth-asia {
-    color: #3b4cb8;
-}
-
 .visitor-map {
     overflow: hidden;
     border: 1px solid #e3e6f3;
