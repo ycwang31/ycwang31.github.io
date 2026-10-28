@@ -759,20 +759,6 @@ button:focus-visible {
     mix-blend-mode: multiply;
 }
 
-.visitor-count {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.75rem;
-    pointer-events: none;
-    user-select: none;
-}
-
-.visitor-count img {
-    height: 22px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(31, 41, 51, 0.15);
-}
-
 @media (max-width: 767.98px) {
     .visitor-slot[data-visitor-slot="bottom"] .visitor-card {
         max-width: 420px;
