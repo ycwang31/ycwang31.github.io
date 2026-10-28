@@ -15,4 +15,4 @@ visitor_widget:
   badge_page_id: "ycwang31.github.io"
   # Image URL from mapmyvisitors.com (Get Code -> "Image" version), e.g.
   # https://mapmyvisitors.com/map.png?d=YOUR_CODE&cl=ffffff
-  map_image_url: "https://mapmyvisitors.com/map.png?cl=d5d9e4&w=600&t=n&d=h_7aXXq0v3niki_z_7oZGkZ4XXBQ5ie06qj3N9Pygg4&co=ffffff&ct=808080"
+  map_image_url: "https://mapmyvisitors.com/map.png?cl=d5d9e4&w=600&t=tt&d=h_7aXXq0v3niki_z_7oZGkZ4XXBQ5ie06qj3N9Pygg4&co=ffffff&ct=808080"
