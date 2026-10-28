@@ -1,0 +1,60 @@
+{% assign vw = site.data.display.visitor_widget %}
+{% if vw.enabled %}
+<section class="card border-0 shadow-sm bg-white visitor-card" id="visitor-card" aria-label="Visitor statistics">
+  <div class="card-body px-3 py-3">
+    {% if vw.map_image_url and vw.map_image_url != "" %}
+    <div class="visitor-card-head">
+      <span class="visitor-card-title"><i class="fas fa-earth-asia" aria-hidden="true"></i> Visitor Map</span>
+    </div>
+    <div class="visitor-map" aria-hidden="true">
+      <img src="{{ vw.map_image_url }}" alt="" draggable="false">
+    </div>
+    {% endif %}
+
+    {% if vw.badge_page_id and vw.badge_page_id != "" %}
+    <div class="visitor-count">
+      <img
+        src="https://visitor-badge.laobi.icu/badge?page_id={{ vw.badge_page_id | url_encode }}&left_text=Visitors&left_color=%23555555&right_color=%234c7bd9"
+        alt="Visitor count"
+        draggable="false">
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<script>
+  (function () {
+    var card = document.getElementById("visitor-card");
+    var sidebarSlot = document.querySelector('[data-visitor-slot="sidebar"]');
+    var bottomSlot = document.querySelector('[data-visitor-slot="bottom"]');
+    if (!card || !sidebarSlot || !bottomSlot) return;
+
+    var wide = window.matchMedia("(min-width: 768px)");
+    var sidebar = sidebarSlot.closest(".profile-sidebar");
+
+    // The sidebar is sticky; if the card makes it taller than the viewport,
+    // let it scroll normally so the bottom of the card stays reachable.
+    function fitSidebar() {
+      if (!sidebar) return;
+      sidebar.classList.remove("profile-sidebar--static");
+      if (wide.matches && sidebar.offsetHeight + 96 > window.innerHeight) {
+        sidebar.classList.add("profile-sidebar--static");
+      }
+    }
+
+    function place() {
+      var slot = wide.matches ? sidebarSlot : bottomSlot;
+      if (card.parentNode !== slot) slot.appendChild(card);
+      fitSidebar();
+    }
+
+    place();
+    if (wide.addEventListener) wide.addEventListener("change", place);
+    else wide.addListener(place);
+    window.addEventListener("resize", fitSidebar);
+    Array.prototype.forEach.call(card.querySelectorAll("img"), function (img) {
+      img.addEventListener("load", fitSidebar);
+    });
+  })();
+</script>
+{% endif %}

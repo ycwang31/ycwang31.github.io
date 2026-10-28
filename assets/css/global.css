@@ -729,3 +729,66 @@ button:focus-visible {
         animation-iteration-count: 1 !important;
     }
 }
+
+/* Visitor card */
+.visitor-slot[data-visitor-slot="sidebar"] .visitor-card {
+    margin-top: 1rem;
+}
+
+.visitor-slot[data-visitor-slot="bottom"] .visitor-card {
+    margin-top: 1.5rem;
+}
+
+.profile-sidebar--static {
+    position: static !important;
+}
+
+.visitor-card-head {
+    margin-bottom: 0.6rem;
+    color: #3f4954;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.visitor-card-head .fa-earth-asia {
+    color: #3b4cb8;
+}
+
+.visitor-map {
+    overflow: hidden;
+    border: 1px solid #e3e6f3;
+    border-radius: 0.7rem;
+    background: linear-gradient(135deg, #f7f8fd 0%, #eceffa 100%);
+    pointer-events: none;
+    user-select: none;
+}
+
+.visitor-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+.visitor-count {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+.visitor-count img {
+    height: 22px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(31, 41, 51, 0.15);
+}
+
+@media (max-width: 767.98px) {
+    .visitor-slot[data-visitor-slot="bottom"] .visitor-card {
+        max-width: 420px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

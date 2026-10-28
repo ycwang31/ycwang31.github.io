@@ -6,3 +6,13 @@ homepage:
   num_news: 7
 
 footer_text: "© 2026 Yongcong Wang"
+
+# Visitor card shown under the profile card (wide screens) or at the
+# bottom of the homepage (narrow screens).
+visitor_widget:
+  enabled: true
+  # Any unique id works; the counter is kept by visitor-badge.laobi.icu.
+  badge_page_id: "ycwang31.github.io"
+  # Image URL from mapmyvisitors.com (Get Code -> "Image" version), e.g.
+  # https://mapmyvisitors.com/map.png?d=YOUR_CODE&cl=ffffff
+  map_image_url: ""
