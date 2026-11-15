@@ -2,7 +2,7 @@
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h2 class="h6 p-3 mb-0 border-bottom border-gray"><i class="fas fa-bullhorn"></i> News</h2>
-    <div class="news-list small" aria-label="Recent news">
+    <div class="news-list small" aria-label="Recent news" data-visible-items="5">
         {% for item in recent_news %}
         <div class="news-item{% unless forloop.first %} border-top border-gray{% endunless %}">
             <div class="news-date">
@@ -13,3 +13,26 @@
         {% endfor %}
     </div>
 </div>
+
+<script>
+  (function () {
+    // Show the first N items; anything beyond scrolls inside the card.
+    var lists = document.querySelectorAll(".news-list[data-visible-items]");
+    function fit() {
+      Array.prototype.forEach.call(lists, function (list) {
+        var items = list.querySelectorAll(".news-item");
+        var n = parseInt(list.getAttribute("data-visible-items"), 10);
+        list.style.maxHeight = "";
+        list.classList.remove("news-list--scroll");
+        if (items.length <= n) return;
+        var last = items[n - 1];
+        list.style.maxHeight = (last.offsetTop - list.offsetTop + last.offsetHeight) + "px";
+        list.classList.add("news-list--scroll");
+      });
+    }
+    fit();
+    window.addEventListener("resize", fit);
+    window.addEventListener("load", fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  })();
+</script>
