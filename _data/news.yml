@@ -6,7 +6,7 @@
 #   date         (required) YYYY-MM-DD HH:MM:SS +0800
 #   display_date (required) short text shown next to the item, e.g. "May 2026"
 
-- title: "Joined Bilibili as a Research Intern in Shanghai!"
+- title: "Joined Bilibili as a Research Intern in Shanghai, working on video generation and editing!"
   date: 2026-11-01 00:01:00 +0800
   display_date: "Nov. 2026"
 

@@ -583,6 +583,21 @@ button:focus-visible {
     transform: translateY(-1px);
 }
 
+.publication-view-all {
+    box-shadow: none;
+}
+
+.publication-view-all .flat-badge-label {
+    background: #e8f0fe;
+    color: #1a73e8;
+    text-shadow: none;
+}
+
+.publication-view-all:hover .flat-badge-label,
+.publication-view-all:focus .flat-badge-label {
+    background: #d2e3fc;
+}
+
 .publication-view-all .fa-arrow-right {
     font-size: 0.85em;
 }
