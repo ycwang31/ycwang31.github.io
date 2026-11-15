@@ -539,70 +539,69 @@ button:focus-visible {
     min-width: 0;
 }
 
-.publication-view-all {
+/* Flat two-tone badge, in the style of shields.io badges. */
+.flat-badge {
     display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    padding: 0.12rem 0.55rem;
-    border-radius: 999px;
-    background: #eef4ff;
-    color: #1a73e8;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(31, 41, 51, 0.18);
+    font-family: Verdana, "DejaVu Sans", Geneva, sans-serif;
     font-size: 0.72rem;
-    font-weight: 600;
-    line-height: 1.4;
+    line-height: 1;
     white-space: nowrap;
-    transition: background-color 0.15s ease, color 0.15s ease;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
-.publication-view-all i {
-    font-size: 0.85em;
+.flat-badge-label,
+.flat-badge-value {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.32rem 0.5rem;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(1, 1, 1, 0.25);
+}
+
+.flat-badge-label {
+    background: #555;
+}
+
+.flat-badge-value {
+    background: var(--badge-color, #4c7bd9);
+}
+
+.flat-badge i {
+    font-size: 0.95em;
     transition: transform 0.15s ease;
 }
 
-.publication-view-all:hover {
-    background: #1a73e8;
-    color: #fff;
+.flat-badge:hover,
+.flat-badge:focus {
+    box-shadow: 0 3px 8px rgba(31, 41, 51, 0.22);
     text-decoration: none;
+    transform: translateY(-1px);
 }
 
-.publication-view-all:hover i {
+.publication-view-all .fa-arrow-right {
+    font-size: 0.85em;
+}
+
+.publication-view-all:hover .fa-arrow-right {
     transform: translateX(2px);
 }
 
 .publication-scholar-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.28rem 0.75rem;
-    border: 1px solid #dadce0;
-    border-radius: 999px;
-    background: #fff;
-    color: #3c4043;
-    font-size: 0.75rem;
-    font-weight: 600;
-    line-height: 1.25;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    --badge-color: #4285f4;
 }
 
-.publication-scholar-link .scholar-logo {
-    width: 1.15em;
-    height: 1.15em;
-    flex: none;
+.publication-scholar-link .fa-google-scholar {
+    font-size: 1.1em;
 }
 
 .publication-scholar-link .scholar-ext {
-    color: #9aa0a6;
-    font-size: 0.75em;
-}
-
-.publication-scholar-link:hover {
-    border-color: #d2e3fc;
-    background: #f8fbff;
-    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.15);
-    color: #1a73e8;
-    text-decoration: none;
+    font-size: 0.8em;
+    opacity: 0.85;
 }
 
 .publication-author-self {
